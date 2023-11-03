@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import CustomNav from './components/CustomNav'
+import Main from './components/Main'
+import CustomFooter from './components/CustomFooter'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div data-bs-theme="dark" className="bg-dark text-light">
+      <header>
+        <CustomNav />
+        <Main />
+        <CustomFooter />
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
