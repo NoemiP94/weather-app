@@ -7,11 +7,9 @@ import CustomFooter from './components/CustomFooter'
 function App() {
   return (
     <div data-bs-theme="dark" className="bg-dark text-light">
-      <header>
-        <CustomNav />
-        <Main />
-        <CustomFooter />
-      </header>
+      <CustomNav />
+      <Main />
+      <CustomFooter />
     </div>
   )
 }
