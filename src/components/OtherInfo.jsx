@@ -20,8 +20,8 @@ const OtherInfo = (props) => {
             <div>
               <ThermometerHigh />
             </div>
-            <div>TEMP MAX</div>
-            <div>{props.weatherDetails.main.temp_max}°</div>
+            <div className="fw-bold">TEMP MAX</div>
+            <div>{props.weatherDetails.list[0].main.temp_max}°</div>
           </div>
         </Col>
         <Col
@@ -33,8 +33,8 @@ const OtherInfo = (props) => {
             <div>
               <ThermometerLow />
             </div>
-            <div>TEMP MIN</div>
-            <div>{props.weatherDetails.main.temp_min}°</div>
+            <div className="fw-bold">TEMP MIN</div>
+            <div>{props.weatherDetails.list[0].main.temp_min}°</div>
           </div>
         </Col>
         <Col
@@ -46,8 +46,8 @@ const OtherInfo = (props) => {
             <div>
               <Wind />
             </div>
-            <div>WIND</div>
-            <div>{props.weatherDetails.wind.speed}km/h</div>
+            <div className="fw-bold">WIND</div>
+            <div>{props.weatherDetails.list[0].wind.speed}km/h</div>
           </div>
         </Col>
         <Col
@@ -59,8 +59,8 @@ const OtherInfo = (props) => {
             <div>
               <Moisture />
             </div>
-            <div>MOISTURE</div>
-            <div>{props.weatherDetails.main.humidity}%</div>
+            <div className="fw-bold">MOISTURE</div>
+            <div>{props.weatherDetails.list[0].main.humidity}%</div>
           </div>
         </Col>
       </Row>
