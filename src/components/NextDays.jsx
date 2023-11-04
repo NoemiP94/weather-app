@@ -4,7 +4,7 @@ import { CloudSunFill } from 'react-bootstrap-icons'
 const NextDays = () => {
   return (
     <Container className="text-center">
-      <h3 className="mt-4 mb-3">Le previsioni per i prossimi giorni</h3>
+      <h3 className="mt-4 mb-3">Next days</h3>
       <Row className="mx-3 rounded-3 mb-3 mt-2 justify-content-evenly">
         <Col xs={2} className="bg-secondary rounded-3 border border-light me-2">
           <div className="my-2">
