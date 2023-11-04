@@ -11,11 +11,7 @@ const OtherInfo = (props) => {
     <Container className="text-center">
       <h2>Other info</h2>
       <Row className="justify-content-center">
-        <Col
-          xs={4}
-          md={3}
-          className="bg-secondary rounded-3 border border-light mx-3 my-2"
-        >
+        <Col xs={4} md={3} lg={2} className="rounded-3 mx-3 my-2 cards">
           <div className="py-2">
             <div>
               <ThermometerHigh />
@@ -24,11 +20,7 @@ const OtherInfo = (props) => {
             <div>{props.weatherDetails.list[0].main.temp_max}°</div>
           </div>
         </Col>
-        <Col
-          xs={4}
-          md={3}
-          className="bg-secondary rounded-3 border border-light mx-3 my-2"
-        >
+        <Col xs={4} md={3} lg={2} className="rounded-3 mx-3 my-2 cards">
           <div className="py-2">
             <div>
               <ThermometerLow />
@@ -37,11 +29,7 @@ const OtherInfo = (props) => {
             <div>{props.weatherDetails.list[0].main.temp_min}°</div>
           </div>
         </Col>
-        <Col
-          xs={4}
-          md={3}
-          className="bg-secondary rounded-3 border border-light mx-3 my-2"
-        >
+        <Col xs={4} md={3} lg={2} className="rounded-3 mx-3 my-2 cards">
           <div className="py-2">
             <div>
               <Wind />
@@ -50,11 +38,7 @@ const OtherInfo = (props) => {
             <div>{props.weatherDetails.list[0].wind.speed}km/h</div>
           </div>
         </Col>
-        <Col
-          xs={4}
-          md={3}
-          className="bg-secondary rounded-3 border border-light mx-3 my-2"
-        >
+        <Col xs={4} md={3} lg={2} className="rounded-3 mx-3 my-2 cards">
           <div className="py-2">
             <div>
               <Moisture />

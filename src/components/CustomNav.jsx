@@ -2,9 +2,9 @@ import { Container, Navbar } from 'react-bootstrap'
 
 const CustomNav = () => {
   return (
-    <Navbar expand="lg" className="bg-primary-subtle">
+    <Navbar expand="lg" className="main-color">
       <Container>
-        <Navbar.Brand className="fw-bold">Weather App</Navbar.Brand>
+        <Navbar.Brand className="fw-bold text-light">Weather App</Navbar.Brand>
       </Container>
     </Navbar>
   )

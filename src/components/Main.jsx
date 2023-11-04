@@ -7,7 +7,7 @@ import { Col, Container, Form, Row } from 'react-bootstrap'
 const Main = () => {
   const apiKey = '14165eda3c1a506e96bbe2333942e2c5'
   const [selectedCity, setSelectedCity] = useState({
-    selected: '',
+    selected: 'London',
   })
   const [weatherDetails, setWeatherDetails] = useState({})
 
@@ -38,7 +38,7 @@ const Main = () => {
   }, [selectedCity])
 
   return (
-    <div>
+    <div className="flex-grow-1">
       <Container className="my-3">
         <Row className="justify-content-center">
           <Col xs={6} md={4}>
@@ -69,8 +69,8 @@ const Main = () => {
       </Container>
       <div>
         <PrincipalContent weatherDetails={weatherDetails} />
-        <NextDays weatherDetails={weatherDetails} />
         <OtherInfo weatherDetails={weatherDetails} />
+        <NextDays weatherDetails={weatherDetails} />
       </div>
     </div>
   )
