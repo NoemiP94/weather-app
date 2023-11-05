@@ -2,14 +2,17 @@ import PrincipalContent from './PrincipalContent'
 import NextDays from './NextDays'
 import OtherInfo from './OtherInfo'
 import { useEffect, useState } from 'react'
-import { Col, Container, Form, Row } from 'react-bootstrap'
+import Form from 'react-bootstrap/Form'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 const Main = () => {
   const apiKey = '14165eda3c1a506e96bbe2333942e2c5'
   const [selectedCity, setSelectedCity] = useState({
     selected: 'London',
   })
-  const [weatherDetails, setWeatherDetails] = useState({})
+  const [weatherDetails, setWeatherDetails] = useState(null)
 
   const fetchWeatherDetails = () => {
     fetch(

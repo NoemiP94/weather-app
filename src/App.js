@@ -6,7 +6,7 @@ import CustomFooter from './components/CustomFooter'
 
 function App() {
   return (
-    <div className="background h-100 d-flex flex-column">
+    <div className="background h-100 d-flex flex-column main-height">
       <CustomNav />
       <Main />
       <CustomFooter />

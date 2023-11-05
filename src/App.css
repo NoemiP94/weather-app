@@ -5,7 +5,7 @@
 }
 
 .background{
-  background: linear-gradient(0deg, rgba(140,139,139,0.9332107843137255) 0%, rgba(18,79,190,1) 58%);
+  background: linear-gradient(0deg, rgba(255,251,251,0.9332107843137255) 5%, rgba(18,79,190,1) 85%);
   font-family: 'Montserrat', sans-serif;
 }
 .App-logo {
@@ -47,16 +47,20 @@
 }
 
 .principal-card{
-  background: #7198df;
+  background: radial-gradient(circle, rgba(255,251,251,0.9332107843137255) 0%, rgba(113,152,223,1) 57%);
   box-shadow: 4px 5px 10px 2px #0e144e;
 }
 
 .cards{
-  background-color: #9edbd2;
+  background: radial-gradient(circle, rgba(255,251,251,0.9332107843137255) 0%, rgba(158,219,210,1) 57%);
   box-shadow: 4px 5px 10px 2px #0e144e;
 }
 
 .main-color {
-  background-color: #0e144e;
+  background: #0e144e;
   color: white;
 }
+
+
+
+
